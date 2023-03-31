@@ -100,7 +100,7 @@ const getElementVal = (id) => {
     newContactForm.set({
       user
     }) .then(()=>{
-        alert("Data added successfully");
+        alert("Data added successfully 👍");
     })
     .catch((error)=>{
         alert(error);
@@ -111,7 +111,7 @@ const getElementVal = (id) => {
 form.addEventListener('submit', processFormdata);
 form.addEventListener('submit', submitForm);
 
-// Connecting firebase 
+
 
 
 
