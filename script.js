@@ -1,3 +1,4 @@
+//Put your firebase config here
 const firebaseConfig = {
     apiKey: "AIzaSyDpqG5E5-Epk60vTYzJYB9gu9z4dOlZwk0",
     authDomain: "form-validation-db.firebaseapp.com",
