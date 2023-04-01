@@ -91,9 +91,6 @@ function submitForm(e) {
     saveMessages(user);
     
 }    
-const getElementVal = (id) => {
-    return document.getElementById(id).value;
-  };
 
   const saveMessages = (user) => {
     const newContactForm = FormDB.push();
