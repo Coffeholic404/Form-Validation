@@ -25,7 +25,7 @@ let isValid = false;
 let passwordsMatch = false;
 
 function ValidateForm() {
-    // Using Contraint API
+    // Using constraint API
     isValid = form.checkValidity();
     // Style main message for an error
     if(!isValid){
@@ -50,7 +50,7 @@ function ValidateForm() {
     }
     // If form is valid and passwords match
     if(isValid && passwordsMatch){
-        message.textContent = 'Successfully Registered!';
+        message.textContent = 'Successfully Registered!🎉';
         message.style.color = 'green';
         messageContainer.style.borderColor = 'green';
     }
