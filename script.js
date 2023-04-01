@@ -11,7 +11,7 @@ const firebaseConfig = {
 
   firebase.initializeApp(firebaseConfig);
 
-  var FormDB = firebase.database().ref("FormInformation");
+  const FormDB = firebase.database().ref("FormInformation");
 
 
 const form = document.getElementById('form');
@@ -96,7 +96,7 @@ const getElementVal = (id) => {
   };
 
   const saveMessages = (user) => {
-    var newContactForm = FormDB.push();
+    const newContactForm = FormDB.push();
   
     newContactForm.set({
       user
