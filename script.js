@@ -24,6 +24,14 @@ const message = document.getElementById('message');
 let isValid = false;
 let passwordsMatch = false;
 
+const user = {
+    name: form.name.value,
+    phone: form.phone.value,
+    email: form.email.value,
+    website: form.website.value,
+    password: form.password.value
+};
+
 function ValidateForm() {
     // Using constraint API
     isValid = form.checkValidity();
@@ -57,13 +65,7 @@ function ValidateForm() {
 };
 
 function storeFormDate () {
-    const user = {
-        name: form.name.value,
-        phone: form.phone.value,
-        email: form.email.value,
-        website: form.website.value,
-        password: form.password.value
-    };
+    user;
     // Do somthing with user data
     // console.table(user);
 }
@@ -81,13 +83,7 @@ function processFormdata(e) {
 
 function submitForm(e) {
     e.preventDefault();
-    const user = {
-        name: form.name.value,
-        phone: form.phone.value,
-        email: form.email.value,
-        website: form.website.value,
-        password: form.password.value
-    };
+    user
     saveMessages(user);
     
 }    
